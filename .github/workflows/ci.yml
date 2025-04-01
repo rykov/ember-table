@@ -1,5 +1,7 @@
 name: Ember-Table CI
 on:
+  push:
+    branches: [ master ]
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
 
