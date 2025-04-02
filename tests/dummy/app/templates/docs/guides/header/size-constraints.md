@@ -39,32 +39,32 @@ override the min/max widths provided by columns.
     <div class="demo-options">
       <label>
         eq-container
-        {{radio-button name='width-constraint' value='eq-container' groupValue=widthConstraint}}
+        {{radio-button name='width-constraint' value='eq-container' groupValue=this.widthConstraint}}
       </label>
 
       <label>
         eq-container-slack
-        {{radio-button name='width-constraint' value='eq-container-slack' groupValue=widthConstraint}}
+        {{radio-button name='width-constraint' value='eq-container-slack' groupValue=this.widthConstraint}}
       </label>
 
       <label>
         gte-container
-        {{radio-button name='width-constraint' value='gte-container' groupValue=widthConstraint}}
+        {{radio-button name='width-constraint' value='gte-container' groupValue=this.widthConstraint}}
       </label>
 
       <label>
         gte-container-slack
-        {{radio-button name='width-constraint' value='gte-container-slack' groupValue=widthConstraint}}
+        {{radio-button name='width-constraint' value='gte-container-slack' groupValue=this.widthConstraint}}
       </label>
 
       <label>
         lte-container
-        {{radio-button name='width-constraint' value='lte-container' groupValue=widthConstraint}}
+        {{radio-button name='width-constraint' value='lte-container' groupValue=this.widthConstraint}}
       </label>
 
       <label>
         none
-        {{radio-button name='width-constraint' value='none' groupValue=widthConstraint}}
+        {{radio-button name='width-constraint' value='none' groupValue=this.widthConstraint}}
       </label>
     </div>
 
@@ -72,12 +72,12 @@ override the min/max widths provided by columns.
     <div class="demo-options">
       <label>
         standard
-        {{radio-button name='resize-mode' value='standard' groupValue=resizeMode}}
+        {{radio-button name='resize-mode' value='standard' groupValue=this.resizeMode}}
       </label>
 
       <label>
         fluid
-        {{radio-button name='resize-mode' value='fluid' groupValue=resizeMode}}
+        {{radio-button name='resize-mode' value='fluid' groupValue=this.resizeMode}}
       </label>
     </div>
 
@@ -143,7 +143,7 @@ constraint. The options are:
           @columns={{this.columns}}
           @widthConstraint='eq-container'
           @resizeMode='fluid'
-          @fillMode={{fillMode}}
+          @fillMode={{this.fillMode}}
           @fillColumnIndex=1
           @scrollIndicators='horizontal'
         />

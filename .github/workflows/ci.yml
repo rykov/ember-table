@@ -1,5 +1,7 @@
 name: Ember-Table CI
 on:
+  push:
+    branches: [ master, ember-v6 ]
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
 
@@ -53,7 +55,9 @@ jobs:
             ember-lts-3.28,
             ember-lts-4.4,
             ember-lts-4.12,
-            # ember-release,
+            ember-lts-5.4,
+            ember-lts-5.12,
+            ember-release,
             # ember-production,
             ember-default-docs
           ]
